@@ -1,0 +1,176 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 10px 0;
+}
+
+.builder-box {
+  /*background-color:pink;*/
+  /*background-image: url('blankShirt.png');
+  background-size: 630px 680px;
+  background-repeat:no-repeat;*/
+  height: 680px;
+}
+
+.color-picker {
+  /*background-color:green;*/
+
+}
+
+.continue-button {
+  background-color:black;
+  color:white;
+  /*position:fixed;*/
+  float:right;
+  margin-top:-30px;
+  font-family:Franchise-Bold;
+  font-size:24px;
+  margin-top:10px;
+  padding-top:10px;
+  right:100px;
+  width:100%;
+  /*position:absolute;*/
+  /*right:20px;
+  bottom:100px;*/
+  /*line-height:2.8;*/
+
+}
+
+.continue-button:hover {
+  color:green;
+}
+
+.edit-panel-section {
+  /*font-family:Franchise-Bold;
+  font-size:28px;*/
+  background-color:#138d4b;
+  color:black;
+  /*margin-top:20px;*/
+}
+
+.shirt-holder {
+  margin: -20px;
+  border-radius: 4px;
+  padding:10px;
+  /*background-color: #fff000;*/
+  margin-bottom:20px;
+  /*background-image: url('blankShirt.png');*/
+  /*background-size: 630px 680px;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  height:680px;
+}
+
+.platen {
+  margin-top:140px;
+  margin-bottom:160px;
+  /*width:297.5px;
+  height:340px;*/
+  width:260px;
+  height:310px;
+  background-color:gray;
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0.2;
+  /*margin-top: 24px;*/
+}
+
+.shirt-holder {
+  /*background-color:green;*/
+  /*opacity:0.6;*/
+  margin-top:-20px;
+  background-image: url('blankShirt.png');
+  background-size: 620px 720px;
+  background-repeat:no-repeat;
+  background-position:center top;
+}
+
+.shirt-holder img {
+  max-width: 320px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.shirt-style-panel {
+
+}
+
+.site-title {
+  font-family: Franchise-Bold;
+  font-size: 28px;
+  color:white;
+  opacity:1.0;
+  margin-top:4px;
+}
+
+.site-title img {
+  max-height:180%;
+  margin-top:-8px;
+}
+
+.text-edit-panel {
+  height: 440px;
+  background-color:red;
+  margin-top:60px;
+  margin-bottom:60px;
+}
+
+.text-area-done-btn {
+  width:100%;
+  margin-top:12px;
+  margin-bottom:-8px;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}

@@ -1,0 +1,406 @@
+body {
+  padding-top: 70px;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+
+  .row-offcanvas-left
+  #sidebarLeft {
+    left: -40%;
+    /*background-color:red;*/
+  }
+
+  .row-offcanvas-left.active {
+    left: 40%;
+  }
+
+  .row-offcanvas-right
+  #sidebarRight {
+    right: -40%;
+  }
+
+  .row-offcanvas-right.active {
+    right: 40%;
+  }
+
+  .shirt-properties-list {
+    margin-left:-20px;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    margin-left: 10px;
+  }
+}
+
+/* custom styling */
+
+.add-image-btn {
+  width:100%;
+  margin-bottom:-10px;
+  /*margin:auto;*/
+}
+
+.add-text-btn {
+  width:100%;
+  margin-top:10px;
+  /*margin:auto;*/
+}
+
+.alt-well {
+  background-color:#eeeeee;
+  margin-bottom:20px;
+}
+
+.builder-row {
+  display:flex;
+  /*display:table;*/
+  width:100%;
+  height:580px;
+  /*margin-top:-20px;*/
+}
+
+.edit-button {
+  /*flex-grow:1;
+  margin:auto;
+  width:50%;
+  float:left;*/
+  margin:auto;
+  font-family:Franchise-Bold;
+  font-size:1.8em;
+  line-height:1;
+}
+.edit-buttons-row {
+
+}
+
+.left-edit-button {
+  width:46.5%;
+  position:fixed;
+  bottom:60px;
+  left:2.5%;
+  /*margin-right:2.5%;*/
+}
+.right-edit-button {
+/*width:46.5%;
+*/position:fixed;
+/*bottom:60px;
+*/right:2.5%;
+/*background: url("../images/addImage.png");*/
+background-size:contain;
+background-position:center;
+/*opacity: 0 !important;*/
+overflow: hidden !important;
+background-color:white;
+/*margin-left:2.5%;*/
+}
+
+
+.center-continue-btn {
+  /*right:50%;*/
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  position: fixed;
+  bottom: 10px;
+  right: 2.5%;
+  left:2.5%;
+/*  width: 95%;
+*/  padding: 5px;
+/*  font-family:Franchise-Bold;
+*/  font-size:1.8em;
+  line-height:1.2em;
+/*  background-color:black;
+/**/  color:white;
+*/}
+
+.left-edit-panel {
+  /*max-width:280px;*/
+  width:220px;
+  /*flex-grow:1;*/
+  /*width:240px;*/
+  /*white-space:nowrap;*/
+  /*clear:left;*/
+  /*vertical-align:top;*/
+  /*display:table-cell;*/
+  /*background-color:red;*/
+  border-spacing:20px;
+  /*display:inline-block;*/
+  /*float:left;*/
+  height:100%;
+}
+
+.marginal-panel {
+  width:40px;
+  height:100%;
+  /*display:table-cell;*/
+  /*background-color:cyan;*/
+}
+
+.right-edit-panel {
+  width:220px;
+  /*max-width:280px;*/
+  /*flex-grow:1;*/
+  /*max-width:220px;*/
+  height:100%;
+
+}
+
+.offcanvas-right-edit-panel {
+  width:220px;
+  /*max-width:280px;*/
+  /*flex-grow:1;*/
+  /*max-width:220px;*/
+  height:100%;
+  margin-right:-400px;
+}
+
+.top-right-corner {
+  /*position: fixed;
+    top: 1em;
+    right: 4em;*/
+    right:20px;
+}
+
+.top-left-corner {
+  /*position: fixed;
+    top: 1em;
+    right: 4em;*/
+    left:20px;
+}
+
+.trash-can {
+  /*background-color:blue;*/
+  position:fixed;
+  top:60px;
+  left:5%;
+  width:40px;
+  height:40px;
+  background-image: url("images/trashcan.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:50% 50%;
+}
+
+.toggle-shirt-color-btn {
+/*  background-color:blue;
+*/  position:fixed;
+  top:60px;
+  right:5%;
+  /*change this dimensions later */
+  width:50px;
+  height:50px;
+  background-image: url("images/blackShirt.jpg");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:50% 50%;
+}
+
+.bottom-edit-panel {
+  /*visibility:hidden;*/
+  background-color:#eeeeee;
+  width:100%;
+  position:fixed;
+  bottom:-800;
+  min-height:20%;
+  /*height:40%;*/
+  padding:10px;
+  /*z-index:1;*/
+}
+
+.edit-panel-done-button {
+  width:100%;
+  margin-top:10px;
+}
+
+.shirt-panel {
+  flex-grow:1;
+  height:100%;
+  min-width:480px;
+  /*margin-left:200px;*/
+  /*background-color:magenta;*/
+  /*background-color:green;*/
+  background-image: url("images/blankShirt.png");
+  background-size: 570px 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*do something about delayed centering on resize */
+  background-position: center 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.edit-panel-section-header {
+  background-color:green;
+  width:100%;
+  margin:-10px;
+  padding:0;
+}
+
+
+.right-panel-continue-btn {
+  /*margin-top:100px;*/
+  width: 100%;
+  font-family:Franchise-Bold;
+  font-size:1.8em;
+  line-height:1.2em;
+  background-color:black;
+  color:white;
+}
+
+.right-panel-tools {
+  height:400px;
+}
+
+.site-title {
+  font-family:Franchise-Bold;
+  font-size:2em;
+  line-height:1.0;
+  /*padding-right:60px;*/
+  /*had to inline style some of this*/
+  /*color:white;*/
+}
+
+.well-section-heading {
+  text-align:center;
+  width:100px;
+  background-color:green;
+  max-width:100%;
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
+  height:38px;
+  color:white;
+  font-size:2em;
+  font-family:Franchise-Bold;
+  line-height:1.5;
+}
+
+.image-section-heading {
+  text-align:center;
+  width:100px;
+  background-color:green;
+  max-width:100%;
+  font-size:18px;
+  margin-top:-20px;
+  height:38px;
+  color:white;
+  font-family:Franchise-Bold;
+  line-height:1.5;
+  font-size:2em;
+}
+
+.pickers {
+  width:100%;
+  margin-top:10px;
+}
+
+.platen {
+  margin: 0 auto;
+  position:    absolute;
+    left:        50%;        /* Start with top left in the center */
+    /*top:         50%;*/
+    width:       240px;      /* The fixed width... */
+    height:      300px;      /* ...and height */
+    margin-left: -120px;     /* Shift over half the width */
+    margin-top:  80px;      /* Shift up half the height */
+    border: 1px solid black; /* Just for demo */
+  /*width:240px;
+  height:300px;*/
+  /*background-color:gray;*/
+  /*margin:100 auto;*/
+  /*opacity:0.2;*/
+/*position:absolute;*/
+}
+
+.platen-image-holder {
+  width:100%;
+  /*height:0;*/
+  /*padding-top: 66.64%
+  /*height:auto;*/
+  /*height:100px;*/
+  /*background-color:lightblue;*/
+  /*background-image: url("../images/DinoGenesis.jpg");
+  background-size: 570px 600px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-size: 100% auto;*/
+  /*background-attachment: fixed;*/
+}
+
+div.upload {
+    width:100%;
+    /*background-color:red;*/
+    overflow: hidden;
+}
+
+div.upload input {
+    display: block !important;
+    /*width: 157px !important;*/
+    /*height: 40px !important;*/
+    background: url(https://lh6.googleusercontent.com/-dqTIJRTqEAQ/UJaofTQm3hI/AAAAAAAABHo/w7ruR1SOIsA/s157/upload.png);
+    background-repeat:no-repeat;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+div.uploadMobileView input {
+  height:1.8em;
+    display: block !important;
+    background-repeat:no-repeat;
+    /*width: 157px !important;*/
+    /*height: 40px !important;*/
+    background-image: url("images/addImage.png");
+
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+
+#sidebarLeft {
+  /*width:180px;*/
+}
+
+#sidebarRight {
+  /*width:180px;*/
+}
+
+.right-toggle-btn {
+  margin-left:-60px;
+}
+
+textarea {
+  resize: none;
+  margin:auto;
+  /*width:80px;*/
+}
+
+.toggle-btns {
+  width:66px;
+  height:24px;
+  font-size:12px;
+  background-color:green;
+  position:fixed;
+}

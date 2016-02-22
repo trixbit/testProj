@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/simpleTeesFavicon.png">
+
+    <title>Simple Tees</title>
+
+    <style>
+      @font-face { font-family: Franchise-Bold; src: url('Franchise-Bold.TTF'); }
+      h1 {
+        font-family: JuneBug
+      }
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="colorPicker.min.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand site-title" href="#" style="color:white">test</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    <div >
+      <div class="builder-row">
+        <div class="marginal-panel"></div>
+        <div class="left-edit-panel">
+          <div class="left-panel-container">
+            <!-- <p><a class="btn btn-default right-panel-continue-btn" href="#">Continue</a></p> -->
+          <section class="well-section-heading" style="width:100%">a</section>
+          <div class="well left-panel-container" style="border-top-left-radius:0px; border-top-right-radius:0px">
+
+          </div>
+
+          </div>
+<!--           <p><a class="btn btn-default center-continue-btn" href="#">Continue</a></p>
+ -->
+        </div>
+        <div class="shirt-panel">
+          <div class="btn trash-can" ></div>
+          <div class="btn toggle-shirt-color-btn"></div>
+
+          <div id="platen" class="platen">
+            <!-- <div id="dragThis" style="display:inline-block; outline:1px black solid">
+              asdfasdfasdf asdfasdfsdf asdf
+            </div> -->
+
+          </div>
+          <div class="edit-buttons-row">
+            <a class="btn btn-default edit-button edit-row-button left-edit-button" href="#">Add Text</a>
+            <div id="uploadMobileView" class="uploadMobileView btn btn-default edit-row-button right-edit-button upload-image-button">
+              <input type='file' id='getval' name="background-image"/>
+            </div>
+            <a class="btn btn-default edit-row-button center-continue-btn" href="#">Continue</a>
+          </div>
+<!--           <p><a class="btn btn-default center-continue-btn" href="#">Continue</a></p>
+ -->      </div>
+        <div class="right-edit-panel">
+          <div class="right-panel-container">
+            <section class="well-section-heading" style="width:100%">Text</section>
+            <div class="well" style="border-top-left-radius:0px; border-top-right-radius:0px;  border-bottom-left-radius:0px; border-bottom-right-radius:0px">
+            <textarea placeholder="Enter text here" class="form-control will-not-deselect-object" id="fullWidthTextArea" rows="3"></textarea>
+            <p><a class="btn btn-default add-text-btn will-not-deselect-object" href="#">Done</a></p>
+
+            <div class="dropdown will-not-deselect-object">
+              <button style="width:100%; font-family:Verdana" class="btn btn-default dropdown-toggle font-family-dropdown will-not-deselect-object" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Verdana
+                <span class="caret"></span>
+              </button>
+              <ul id="fontMenu" class="dropdown-menu will-not-deselect-object" aria-labelledby="dropdownMenu1">
+                <li><a href="#" class="will-not-deselect-object" style="font-family:Verdana" >Verdana</a></li>
+                <li><a href="#" class="will-not-deselect-object" style="font-family:Times">Times</a></li>
+                <li><a href="#" class="will-not-deselect-object" style="font-family:Impact">Impact</a></li>
+              </ul>
+            </div>
+<!--             <a href="#" class="btn btn-default" style="margin-top:10px; width:100%">Helvetica</a>
+ -->
+            <!-- <a href="#" class="btn btn-default cp-background" style="margin-top:10px; width:100%">Text Color</a> -->
+            <div class="dropdown will-not-deselect-object" >
+              <button style="width:100%" class="btn btn-default dropdown-toggle font-family-dropdown will-not-deselect-object" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="color-swatch will-not-deselect-object" style="background-color:black; color:white"></div>
+                <!-- <span class="caret"></span> -->
+              </button>
+              <ul class="dropdown-menu will-not-deselect-object" aria-labelledby="dropdownMenu1">
+                <li><a href="#" id="red"><div class="color-swatch will-not-deselect-object" style="background-color:red"></div></a></li>
+                <li><a href="#" id="blue"><div class="color-swatch will-not-deselect-object" style="background-color:blue"></div></a></li>
+                <li><a href="#" id="yellow"><div class="color-swatch will-not-deselect-object" style="background-color:yellow"></div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="image-section-heading" style="width:100%">Image</section>
+        <div class="well" style="border-top-left-radius:0px; border-top-right-radius:0px">
+          <div class="upload btn btn-default upload-image-button">
+            <input type='file' id='getval2' name="background-image"/>
+          </div>
+        </div>
+          <p><a id="download" class="btn btn-default right-panel-continue-btn will-not-deselect-object" href="#">Continue</a></p>
+          <!-- <p><a id="dl" download="Canvas.png" href="#">Download Canvas</a> -->
+</p>
+
+        </div>
+        <div class="marginal-panel"></div>
+      </div>
+      <!-- <hr>
+      <footer>
+        <p>© Company 2013</p>
+      </footer> -->
+
+
+    
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="offcanvas.js"></script>
+    <script src="main.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    // <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <script src="colorPicker.min.js"></script>
+<script>
+
+
+//add citation here:
+$(function(){
+
+  $(".cp-background").colorPicker({
+    onSelect: function( ui, c ){
+      ui.css({'background-color': c, 'border-color': c});
+    }
+  });
+
+  $(".cp-parent-background").colorPicker({
+    onSelect: function( ui, c ){
+      ui.parents().filter('.well').css('background', c);
+    }
+  });
+
+  $(".cp-header").colorPicker({
+    colors: 'colors.json',
+    rowitem: 10,
+    onSelect: function( ui, c ){
+      $('.head-section').css('background-color', c);
+      $('.head-section .navbar-nav > li.active > a').css('color', c);
+    }
+  });
+
+  $(".cp-get").colorPicker({
+    onSelect: function( ui, c ){
+      $('.cp-set').val(c).css('color', c);
+    }
+  });
+
+  $(".cp-align").colorPicker({
+    onSelect: function( ui, c ){
+      ui.parent().prev().css('color', c);
+    }
+  });
+
+  $(".cp-fullscreen").colorPicker({
+    onSelect: function(ui, color){
+      alert(color);
+    }
+  });
+
+});
+
+</script>
+  </body>
+</html>
